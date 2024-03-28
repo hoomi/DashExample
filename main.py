@@ -6,6 +6,7 @@ import os
 df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/gapminder_unfiltered.csv')
 
 app = Dash(__name__)
+server=app.server
 
 app.layout = html.Div([
     html.H1(children='Title of Dash App', style={'textAlign':'center'}),
